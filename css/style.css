@@ -12,14 +12,14 @@
 }
 
 html {
-	color-scheme: dark light;
+	/* color-scheme: dark light; */
 	scroll-behavior: smooth;
   font-family: 'Outfit', sans-serif;
 }
 
 body {
   min-height: 100vh;
-  background: #49220b;
+  background: #b9b9b9;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,19 +36,20 @@ video {
 /* End of CSS Reset */
 
 .greetings {
-  font-size: 50px;
+  font-size: 35px;
   color: white;
   font-weight: bold;
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   text-align: center;
 }
 
 .container {
   margin: 2em;
   background: white;
-  min-width: 40%;
+  width: 40vh;
   border-radius: 25px;
-  padding: 25px;
+  padding: 30px 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,20 +71,20 @@ video {
 }
 
 h2 {
-  font-size: 20px;
-  margin-bottom: 25px;
+  font-size: 16px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
 input {
   text-align: center;
   background: #d3efe0;
-  border: 1px solid grey;
+  border: 0px solid grey;
   max-width: 60%;
   font-size: 25px;
   padding: 10px 5px;
   border-radius: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   color: black;
 }
 
@@ -91,7 +92,7 @@ button {
   cursor: pointer;
   text-align: center;
   background: #85e3ef;
-  border: 1px solid grey;
+  border: 0px solid grey;
   width: 40%;
   font-size: 25px;
   padding: 10px 5px;
@@ -108,11 +109,11 @@ button {
 
 .new-quantity {
   font-size: 25px;
-  width: 80%;
+  width: 85%;
   font-weight: bold;
-  border: 1px solid black;
+  border: 0px solid black;
   padding: 10px 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   background: #85e3ef;
   text-align: center
 }
