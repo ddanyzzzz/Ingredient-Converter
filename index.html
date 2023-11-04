@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredient Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="greetings">Ingredient Converter</h1>
+  <div class="container">
+    <h1 class="title">Round to Round</h1>
+    <div class="divider"></div>
+    <h2 class="reciepe-diameter">Diameter in the reciepe</h2>
+    <input id="reciepe-diameter" inputmode="numeric" pattern=[0-9] type="number" class="reciepe-tray-diameter">
+    <h2 class="own-tray-diameter">Diameter of your tray</h2>
+    <input id="personal-tray-diameter" inputmode="numeric" pattern=[0-9] type="number" class="personal-tray-diameter">
+    <h2 id="coefficient" class="coefficient">#</h2>
+    <h2 class="reciepe-quantity">Ingredient quantity in the reciepe</h2>
+    <input id="ingredient-quantity" inputmode="numeric" pattern=[0-9] type="number" class="own-ingredient-quantity">
+    <div class="output">
+      <h2 class="output-text">The necessary quantity for your tray:</h2>
+      <h2 id="new-quantity" class="new-quantity">#</h2>
+    </div>
+    <button id="btn" onclick="fun1()">Submit</button>
+  </div>
+  <script>
+    function fun1() {
+  let reciepeDiameterInput = document.querySelector("#reciepe-diameter");
+  let reciepeDiameter = reciepeDiameterInput.value;
+  let trayDiameterInput = document.querySelector("#personal-tray-diameter");
+  let trayDiameter = trayDiameterInput.value;
+  let coefficient = (
+    (trayDiameter * trayDiameter) /
+    (reciepeDiameter * reciepeDiameter)
+  ).toFixed(2);
+  let coefficientDisplay = document.querySelector("#coefficient");
+  coefficientDisplay.innerText = coefficient;
+  let ingredientInput = document.querySelector("#ingredient-quantity");
+  let ingredient = ingredientInput.value;
+  let newQuantity = document.querySelector("#new-quantity");
+  newQuantity.innerText = Math.round(ingredient * coefficient) + `g`;
+  console.log(coefficient);
+}
+  </script>
+</body>
+</html>
