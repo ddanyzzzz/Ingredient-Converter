@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="home">
+            <img src="img/Favicon.png" alt="">
+        </a>
+        <h2>INGREDIENT CONVERTER</h2>
+    </header>
+    <main>
+        <h1 class="title">ROUND <span>→</span> ROUND</h1>
+        <div class="button-row">
+            <a href="round-to-round.html" class="converter-button">
+                <img src="/img/button-row/round to round white.svg" alt="">
+            </a>
+            <a href="round-to-square.html" class="converter-button">
+                <img src="/img/button-row/round to square semi.svg" alt="">
+            </a>
+            <a href="square-to-round.html" class="converter-button">
+                <img src="/img/button-row/square to round semi.svg" alt="">
+            </a>
+            <a href="square-to-square.html" class="converter-button">
+                <img src="img/button-row/square to square semi.svg" alt="">
+            </a>
+        </div>
+        <div class="converter-icon">
+            <img src="img/button-row/round to round cream.svg" alt="">
+        </div>
+        <div class="input-row">
+            <p>Tray diameter in the recipe (cm)</p>
+            <input id="recipe-diameter-input" type="number" placeholder="Type Here">
+        </div>
+        <div class="input-row">
+            <p>Diameter of your tray (cm)</p>
+            <input id="personal-diameter-input" type="number" placeholder="Type Here">
+        </div>
+        <P id="coefficient" class="coefficient">#</P>
+        <div class="output-row">
+            <p>The necessary quantity for your tray:</p>
+            <div class="output-container">
+                <h2 id="output" class="output">#</h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="input-row">
+            <p>Ingredient quantity in the recipe (g)</p>
+            <input id="quantity-in-recipe" type="number" placeholder="Type Here">
+        </div>
+        <div class="contact-container">
+            <div class="contact-column">
+                <a href="">
+                    <img src="img/reset.svg" alt="">
+                </a>
+                <a class="footer-link-text" href="">RESET ALL</a>
+            </div>
+            <!-- <div class="contact-column">
+                <a href="">
+                    <img src="img/contact.svg" alt="">
+                </a>
+                <a class="footer-link-text" href="">CONTACT</a>
+            </div> -->
+        </div>
+    </footer>
+    <script src="javascript/round-to-round.js"></script>
+</body>
+</html>

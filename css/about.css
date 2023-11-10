@@ -1,0 +1,122 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+html {
+	color-scheme: dark light;
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+  	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--brown);
+    background-image: url(../img/main-background.svg);
+    background-size: cover;
+}
+
+:root {
+    --brown: #49220B;
+    --cream: #F5E1C8;
+    --light_white: rgba(255, 255, 255, 0.1);
+    --light_brown: #49220b7e;
+    --pure_white: white;
+}
+
+img,
+picture,
+svg,
+video {
+	display: block;
+	max-width: 100%;
+}
+/* End of CSS Reset */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img {
+    width: 100%;
+    max-width: 100px;
+    margin: 50px;
+}
+
+p {
+    text-align: center;
+    color: var(--pure_white);
+    line-height: 1.5;
+    padding: 0 2em;
+}
+
+p span {
+    font-weight: bold;
+}
+
+main a {
+    margin-top: 3em;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--pure_white);
+    line-height: 1.5;
+    padding: 0 2em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.button-white {
+    margin: 0 1em;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--pure_white);
+    color: var(--brown);
+    font-weight: bold;
+    min-width: 80%;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.transparent-button {
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 1px solid var(--pure_white);
+    background-color: var(--light_white);
+    color: var(--pure_white);
+    min-width: 20%;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.transparent-button:hover {
+    opacity: 0.7;
+}
+
+.transparent-button:active {
+    opacity: 0.2;
+}
