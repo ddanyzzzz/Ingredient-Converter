@@ -24,6 +24,7 @@ body {
     max-width: 400px;
     width: 100%;
     margin: 0 auto;
+    background: var(--pure_white);
 }
 
 :root {
